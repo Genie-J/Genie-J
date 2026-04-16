@@ -9,6 +9,14 @@ No funnels, no mailing list, no Pro tier chasing. If it helps, star it. If not, 
 
 ## 🔥 Currently shipping
 
+### [ctxwatch](https://github.com/Genie-J/ctxwatch) — The smoke detector for Claude Code context saturation
+
+A single-file Python CLI that tails your transcript JSONL and tells you, live, how close you are to the context window limit. Built in response to [anthropics/claude-code#49226](https://github.com/anthropics/claude-code/issues/49226) ("the alarm, not the smoke detector"). Stop-hook generator fires at a threshold of your choosing — exactly what the issue author asked for.
+
+- Stdlib only. 20 unit tests. Auto-detects 1M-context subscribers.
+- Sibling of `cc-healthcheck` (static) — this is the dynamic version.
+- Install: `pipx install git+https://github.com/Genie-J/ctxwatch`
+
 ### [cc-healthcheck](https://github.com/Genie-J/cc-healthcheck) — What's eating your Claude Code context window?
 
 A single-file Python CLI that audits everything auto-loading into your Claude Code session: `CLAUDE.md` + `@`-references + `rules/` + skills frontmatter. Lints your hooks against known pitfalls. X-rays the latest session JSONL.
