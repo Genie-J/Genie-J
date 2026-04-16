@@ -9,6 +9,14 @@ No funnels, no mailing list, no Pro tier chasing. If it helps, star it. If not, 
 
 ## 🔥 Currently shipping
 
+### [cc-healthcheck](https://github.com/Genie-J/cc-healthcheck) — What's eating your Claude Code context window?
+
+A single-file Python CLI that audits everything auto-loading into your Claude Code session: `CLAUDE.md` + `@`-references + `rules/` + skills frontmatter. Lints your hooks against known pitfalls. X-rays the latest session JSONL.
+
+- Zero dependencies. Zero network. Zero upload.
+- Surfaces real issues: pipe-quoting bugs (#1132), missing hook timeouts, system-reminder inflation
+- Run via `curl -sSL … | python3 -` — nothing stays on disk
+
 ### [burncheck](https://github.com/Genie-J/burncheck) — Know before the throttle hits
 
 A single-file HTML tool that reads your `~/.claude/projects/*.jsonl` in-browser and projects whether your current burn rate will cross Anthropic's 7-day Opus or Sonnet cap before the week ends.
